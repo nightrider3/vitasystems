@@ -594,6 +594,26 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   .vg-steps{grid-template-columns:1fr}
   .hero-title{font-size:2.3rem}
 }
+
+/* Verhindert Umbruch im Container */
+.nd-inner {
+  flex-wrap: nowrap;
+}
+
+/* Langer Text nicht umbrechen, sondern abschneiden */
+.nd-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Auf Mobile: Telefonnummer und Beschreibungstext ausblenden */
+@media (max-width: 480px) {
+  .nd-phone { display: none; }
+  .nd-text  { display: none; }
+  .nd-label { font-size: 12px; }
+  .btn-nd   { font-size: 11px; padding: 6px 10px; }
+}
 </style>
 </head>
 <body>
