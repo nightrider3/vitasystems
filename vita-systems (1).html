@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VITA SYSTEMS – KI, Automatisierung & Cybersecurity | IT-Consulting Österreich</title>
+<meta name="description" content="VITA SYSTEMS bietet maßgeschneiderte IT-Lösungen in KI, Automatisierung, Cybersecurity, NIS2/ISO/DORA Compliance sowie IT-Schulungen und Consulting in Österreich.">
+<meta name="keywords" content="KI Beratung Österreich, Automatisierung IT, Cybersecurity, NIS2 Readiness, DORA Compliance, ISO 27001, IT Consulting Salzburg, Künstliche Intelligenz, IT-Schulungen, Chatbot Entwicklung">
+<meta name="author" content="VITA SYSTEMS | Vita Energy GmbH">
+<meta name="robots" content="index, follow">
+<meta name="language" content="de">
+<meta name="geo.region" content="AT-5">
+<meta name="geo.placename" content="Eugendorf, Salzburg">
+<meta property="og:title" content="VITA SYSTEMS – KI, Automatisierung & Cybersecurity | Österreich">
+<meta property="og:description" content="Maßgeschneiderte IT-Lösungen: KI-Chatbots, Automatisierung, Security, NIS2/DORA/ISO Compliance & IT-Consulting in Österreich.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_AT">
+<meta property="og:site_name" content="VITA SYSTEMS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VITA SYSTEMS – KI & IT-Consulting Österreich">
+<meta name="twitter:description" content="KI-Lösungen, Automatisierung, Cybersecurity und Compliance aus einer Hand.">
+<link rel="canonical" href="https://www.vitasystems.at/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "VITA SYSTEMS",
+  "legalName": "Vita Energy GmbH",
+  "url": "https://www.vitasystems.at",
+  "logo": "https://www.vitasystems.at/logo.png",
+  "description": "Maßgeschneiderte IT-Lösungen: KI, Automatisierung, Cybersecurity und Compliance in Österreich.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Auerbach 9",
+    "addressLocality": "Eugendorf",
+    "postalCode": "5301",
+    "addressCountry": "AT"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+43-670-184-8382",
+    "contactType": "customer service",
+    "availableLanguage": ["German", "English"]
+  },
+  "sameAs": []
+}
+</script>
+
+<style>
+:root{
+  --navy:#060e1e;
+  --navy2:#0a1628;
+  --navy3:#0f1e35;
+  --gold:#c9a84c;
+  --gold2:#e8c97a;
+  --gold-dim:rgba(201,168,76,0.15);
+  --gold-dim2:rgba(201,168,76,0.07);
+  --blue:#1a3a6b;
+  --text:#c8d4e8;
+  --text2:#8aa0bf;
+  --white:#f0f4ff;
+  --border:rgba(201,168,76,0.22);
+  --border2:rgba(201,168,76,0.08);
+  --shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--navy);
+  color:var(--text);
+  font-family:'Barlow',sans-serif;
+  font-weight:300;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+body::after{
+  content:'';
+  position:fixed;inset:0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,168,76,0.025) 1px,transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;z-index:0;
+}
+
+/* ===== COOKIE ===== */
+#cookie-banner{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--navy2);
+  border-top:1px solid var(--border);
+  padding:18px 40px;z-index:9999;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+  box-shadow:0 -8px 30px rgba(0,0,0,0.4);
+  transition:transform 0.4s ease;
+}
+#cookie-banner.hidden{transform:translateY(110%)}
+.cookie-text{font-size:0.83rem;color:var(--text2);max-width:680px;line-height:1.5}
+.cookie-text a{color:var(--gold);text-decoration:none}
+.cookie-btns{display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap}
+.btn-ck-ok{background:var(--gold);color:var(--navy);border:none;padding:9px 22px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:1px;cursor:pointer;transition:background 0.2s}
+.btn-ck-ok:hover{background:var(--gold2)}
+.btn-ck-no{background:transparent;color:var(--text2);border:1px solid rgba(255,255,255,0.15);padding:9px 22px;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.85rem;letter-spacing:1px;cursor:pointer;transition:all 0.2s}
+.btn-ck-no:hover{color:var(--white);border-color:rgba(255,255,255,0.3)}
+
+/* ===== NAV ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 48px;height:74px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(6,14,30,0.82);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border2);
+  transition:all 0.3s;
+}
+nav.scrolled{background:rgba(6,14,30,0.97);border-bottom-color:var(--border);box-shadow:0 4px 24px rgba(0,0,0,0.4)}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.nav-logo img{height:48px;width:auto;filter:drop-shadow(0 0 8px rgba(201,168,76,0.3))}
+.nav-logo-text{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:3px;color:var(--white);line-height:1}
+.nav-logo-text span{display:block;font-size:0.5rem;letter-spacing:5px;color:var(--gold);font-weight:500;margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:0;list-style:none}
+.nav-links a{
+  color:var(--text2);text-decoration:none;
+  font-size:0.78rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
+  padding:8px 14px;
+  transition:color 0.2s;position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:2px;left:14px;right:14px;
+  height:1px;background:var(--gold);
+  transform:scaleX(0);transition:transform 0.3s;
+}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{
+  background:transparent!important;
+  border:1px solid var(--gold)!important;
+  color:var(--gold)!important;
+  margin-left:8px;
+  padding:7px 18px!important;
+}
+.nav-cta:hover{background:var(--gold-dim)!important}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--gold);transition:all 0.3s}
+.mobile-menu{
+  display:none;position:fixed;top:74px;left:0;right:0;
+  background:var(--navy2);border-bottom:1px solid var(--border);
+  padding:24px 32px;z-index:998;flex-direction:column;gap:4px;
+}
+.mobile-menu a{
+  color:var(--text2);text-decoration:none;font-size:0.9rem;
+  letter-spacing:1.5px;text-transform:uppercase;
+  padding:12px 0;border-bottom:1px solid var(--border2);
+  transition:color 0.2s;display:block;
+}
+.mobile-menu a:hover{color:var(--gold)}
+.mobile-menu.open{display:flex}
+
+/* ===== SHARED ===== */
+section{position:relative;z-index:1}
+.si{max-width:1200px;margin:0 auto;padding:0 48px}
+.sp{padding:90px 0}
+.section-label{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:0.7rem;letter-spacing:4px;text-transform:uppercase;
+  color:var(--gold);font-family:'Rajdhani',sans-serif;font-weight:600;
+  margin-bottom:14px;
+}
+.section-label::before{content:'';width:28px;height:1px;background:var(--gold)}
+.section-title{
+  font-family:'Rajdhani',sans-serif;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);
+  font-weight:700;color:var(--white);line-height:1.1;margin-bottom:14px;
+}
+.section-sub{font-size:0.95rem;color:var(--text2);max-width:580px;line-height:1.8}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+
+/* ===== HERO ===== */
+#hero{
+  min-height:100vh;display:flex;align-items:center;
+  padding:130px 48px 90px;position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 70% 55% at 65% 50%,rgba(26,58,107,0.18) 0%,transparent 70%),
+    radial-gradient(ellipse 40% 35% at 20% 75%,rgba(201,168,76,0.04) 0%,transparent 60%),
+    linear-gradient(155deg,var(--navy) 0%,var(--navy2) 50%,var(--navy) 100%);
+  z-index:1;
+}
+.hero-ring{
+  position:absolute;right:5%;top:50%;transform:translateY(-50%);
+  width:520px;height:520px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.06);
+  background:radial-gradient(circle,rgba(26,58,107,0.14) 0%,transparent 70%);
+  z-index:1;
+}
+.hero-ring::before{
+  content:'';position:absolute;inset:40px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.04);
+}
+.hero-content{position:relative;z-index:2;max-width:760px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--gold-dim2);border:1px solid var(--border);
+  padding:7px 16px;margin-bottom:28px;
+  font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);font-family:'Rajdhani',sans-serif;font-weight:600;
+}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0.5)}60%{box-shadow:0 0 0 8px rgba(201,168,76,0)}}
+.hero-title{
+  font-family:'Rajdhani',sans-serif;
+  font-size:clamp(2.6rem,5.5vw,4.6rem);
+  font-weight:700;line-height:1.05;color:var(--white);margin-bottom:20px;
+}
+.hero-title .gold{color:var(--gold)}
+.hero-title .sub{
+  display:block;font-size:clamp(1.2rem,2.8vw,2.1rem);
+  font-weight:500;color:var(--text2);letter-spacing:2px;margin-top:4px;
+}
+.hero-sub{font-size:1rem;color:var(--text2);max-width:560px;margin-bottom:40px;line-height:1.8}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-p{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--gold);color:var(--navy);
+  padding:13px 32px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.9rem;
+  letter-spacing:2px;text-transform:uppercase;text-decoration:none;
+  transition:all 0.3s;overflow:hidden;position:relative;
+}
+.btn-p::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.18),transparent);transform:translateX(-100%);transition:transform 0.5s}
+.btn-p:hover::after{transform:translateX(100%)}
+.btn-p:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,0.3)}
+.btn-s{
+  display:inline-flex;align-items:center;gap:10px;
+  background:transparent;color:var(--white);
+  padding:12px 30px;border:1px solid rgba(255,255,255,0.18);
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.9rem;
+  letter-spacing:2px;text-transform:uppercase;text-decoration:none;
+  transition:all 0.3s;
+}
+.btn-s:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.hero-stats{
+  display:flex;gap:40px;margin-top:56px;
+  padding-top:40px;border-top:1px solid var(--border2);flex-wrap:wrap;
+}
+.stat-num{font-family:'Rajdhani',sans-serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
+.stat-label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--text2);margin-top:3px}
+
+/* ===== LEISTUNGEN OVERVIEW ===== */
+#leistungen{background:var(--navy2)}
+.ov-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;margin-top:52px;
+  border:1px solid var(--border2);
+}
+.ov-card{
+  background:var(--navy3);padding:32px 28px;
+  border-right:1px solid var(--border2);
+  transition:all 0.35s;position:relative;overflow:hidden;cursor:default;
+}
+.ov-card:nth-child(3n){border-right:none}
+.ov-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;
+  height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:scaleX(0);transition:transform 0.4s;
+}
+.ov-card:hover{background:rgba(15,30,53,0.95);transform:translateY(-3px);box-shadow:var(--shadow)}
+.ov-card:hover::before{transform:scaleX(1)}
+.ov-icon{
+  width:44px;height:44px;
+  border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:18px;transition:border-color 0.3s;
+}
+.ov-card:hover .ov-icon{border-color:var(--border)}
+.ov-title{font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);letter-spacing:1px;margin-bottom:8px}
+.ov-text{font-size:0.83rem;color:var(--text2);line-height:1.7}
+.ov-link{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:14px;font-size:0.75rem;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--gold);text-decoration:none;
+  font-family:'Rajdhani',sans-serif;font-weight:600;
+  transition:gap 0.2s;
+}
+.ov-link:hover{gap:10px}
+
+/* ===== KI SECTION ===== */
+#ki{background:var(--navy)}
+.ki-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:52px}
+.ki-card{
+  background:var(--navy2);padding:36px 30px;
+  border:1px solid var(--border2);transition:all 0.35s;
+  position:relative;overflow:hidden;
+}
+.ki-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;
+  height:2px;background:var(--gold);
+  transform:scaleX(0);transform-origin:left;transition:transform 0.35s;
+}
+.ki-card:hover{border-color:var(--border);transform:translateY(-4px);box-shadow:var(--shadow)}
+.ki-card:hover::after{transform:scaleX(1)}
+.ki-label{
+  font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);font-family:'Rajdhani',sans-serif;font-weight:700;
+  margin-bottom:12px;
+}
+.ki-title{font-family:'Rajdhani',sans-serif;font-size:1.25rem;font-weight:700;color:var(--white);margin-bottom:10px;line-height:1.2}
+.ki-text{font-size:0.87rem;color:var(--text2);line-height:1.75;margin-bottom:18px}
+.ki-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:0.67rem;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--gold);background:var(--gold-dim2);
+  border:1px solid var(--border2);padding:3px 9px;
+  font-family:'Rajdhani',sans-serif;font-weight:600;
+}
+.usecase-box{
+  margin-top:48px;padding:36px;
+  background:var(--navy2);border:1px solid var(--border2);
+}
+.uc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:28px}
+.uc-item{}
+.uc-title{font-family:'Rajdhani',sans-serif;font-size:0.92rem;font-weight:700;color:var(--gold);margin-bottom:7px;letter-spacing:0.5px}
+.uc-text{font-size:0.81rem;color:var(--text2);line-height:1.65}
+
+/* ===== COMPLIANCE ===== */
+#compliance{background:var(--navy2)}
+.comp-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:52px}
+.comp-text{}
+.comp-intro{font-size:0.92rem;color:var(--text2);line-height:1.8;margin-bottom:28px}
+.comp-list{list-style:none;margin-bottom:32px;display:flex;flex-direction:column;gap:10px}
+.comp-list li{display:flex;align-items:flex-start;gap:12px;font-size:0.88rem;color:var(--text2);line-height:1.6}
+.comp-list li::before{content:'▸';color:var(--gold);flex-shrink:0;margin-top:1px}
+.comp-frameworks{display:flex;flex-direction:column;gap:16px}
+.fw-card{
+  background:var(--navy);border:1px solid var(--border2);
+  padding:24px 22px;transition:all 0.3s;position:relative;overflow:hidden;
+}
+.fw-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:2px;background:var(--gold);transform:scaleY(0);
+  transform-origin:bottom;transition:transform 0.3s;
+}
+.fw-card:hover::before{transform:scaleY(1)}
+.fw-card:hover{border-color:var(--border);background:rgba(10,22,40,0.9)}
+.fw-row{display:flex;align-items:flex-start;gap:16px}
+.fw-badge{
+  font-family:'Rajdhani',sans-serif;font-size:1.4rem;font-weight:700;
+  color:var(--gold);line-height:1;flex-shrink:0;min-width:60px;
+}
+.fw-info{}
+.fw-name{font-family:'Rajdhani',sans-serif;font-size:0.78rem;font-weight:600;color:var(--text2);letter-spacing:1px;margin-bottom:4px}
+.fw-desc{font-size:0.82rem;color:var(--text2);line-height:1.6}
+
+/* ===== SCHULUNGEN ===== */
+#schulungen{background:var(--navy)}
+.sch-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:52px}
+.sch-cards{display:flex;flex-direction:column;gap:2px}
+.sch-card{
+  background:var(--navy2);padding:28px 26px;
+  border:1px solid var(--border2);
+  display:flex;gap:20px;align-items:flex-start;
+  transition:all 0.3s;
+}
+.sch-card:hover{border-color:var(--border);background:var(--navy3)}
+.sch-icon{
+  width:42px;height:42px;flex-shrink:0;
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold);
+}
+.sch-title{font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;letter-spacing:0.5px}
+.sch-text{font-size:0.84rem;color:var(--text2);line-height:1.7}
+.support-box{
+  background:var(--navy2);border:1px solid var(--border2);padding:36px;
+  display:flex;flex-direction:column;gap:24px;
+}
+.support-title{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.support-sub{font-size:0.88rem;color:var(--text2);line-height:1.7;margin-bottom:16px}
+.support-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-top:1px solid var(--border2)}
+.support-item-icon{color:var(--gold);flex-shrink:0;margin-top:2px}
+.support-item-title{font-family:'Rajdhani',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:3px}
+.support-item-text{font-size:0.81rem;color:var(--text2);line-height:1.6}
+
+/* ===== VORGEHEN ===== */
+#vorgehen{background:var(--navy2)}
+.vg-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;margin-top:52px;position:relative;
+}
+.vg-steps::before{
+  content:'';position:absolute;top:28px;
+  left:calc(12.5% + 28px);right:calc(12.5% + 28px);
+  height:1px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));
+  opacity:0.25;
+}
+.vg-card{padding:0 20px 36px;text-align:center}
+.vg-num{
+  width:56px;height:56px;border:1px solid var(--border);
+  background:var(--navy);margin:0 auto 20px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Rajdhani',sans-serif;font-size:1.35rem;font-weight:700;
+  color:var(--gold);position:relative;z-index:1;transition:all 0.3s;
+}
+.vg-card:hover .vg-num{background:var(--gold-dim);border-color:var(--gold);box-shadow:0 0 18px rgba(201,168,76,0.2)}
+.vg-title{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--white);letter-spacing:1px;margin-bottom:10px}
+.vg-text{font-size:0.83rem;color:var(--text2);line-height:1.7}
+
+/* ===== CTA BAND ===== */
+#cta{
+  background:linear-gradient(135deg,var(--navy2) 0%,var(--blue) 50%,var(--navy2) 100%);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  padding:72px 0;text-align:center;position:relative;overflow:hidden;
+}
+#cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 70% at 50% 50%,rgba(201,168,76,0.05) 0%,transparent 70%)}
+.cta-inner{position:relative;z-index:1}
+.cta-title{font-family:'Rajdhani',sans-serif;font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:700;color:var(--white);margin-bottom:12px}
+.cta-sub{font-size:0.95rem;color:var(--text2);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ===== CONTACT ===== */
+#kontakt{background:var(--navy2)}
+.kt-layout{display:grid;grid-template-columns:1fr 1.5fr;gap:72px;margin-top:52px;align-items:start}
+.kt-info{}
+.kt-info h3{font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:20px;letter-spacing:1px}
+.kt-detail{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--border2)}
+.kt-detail:last-of-type{border-bottom:none}
+.kt-icon{width:38px;height:38px;border:1px solid var(--border2);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--gold)}
+.kt-dlabel{font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-family:'Rajdhani',sans-serif;font-weight:600;margin-bottom:3px}
+.kt-dval{font-size:0.87rem;color:var(--text2)}
+.kt-dval a{color:var(--text2);text-decoration:none;transition:color 0.2s}
+.kt-dval a:hover{color:var(--gold)}
+.kt-form{}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--text2);margin-bottom:7px;font-family:'Rajdhani',sans-serif;font-weight:600}
+.form-group input,.form-group select,.form-group textarea{
+  width:100%;background:var(--navy);border:1px solid var(--border2);
+  color:var(--white);padding:11px 14px;
+  font-family:'Barlow',sans-serif;font-size:0.88rem;
+  outline:none;transition:border-color 0.2s;appearance:none;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:110px}
+.form-group select option{background:var(--navy2);color:var(--white)}
+.form-check{display:flex;align-items:flex-start;gap:10px;margin-bottom:20px}
+.form-check input[type=checkbox]{width:15px;height:15px;flex-shrink:0;margin-top:3px;accent-color:var(--gold);cursor:pointer}
+.form-check label{font-size:0.8rem;color:var(--text2);cursor:pointer;line-height:1.5}
+.form-check label a{color:var(--gold);text-decoration:none}
+.btn-submit{width:100%;background:var(--gold);color:var(--navy);border:none;padding:15px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.95rem;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:all 0.3s}
+.btn-submit:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.25)}
+.form-success{display:none;background:var(--gold-dim2);border:1px solid var(--border);padding:22px;text-align:center;color:var(--gold);font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:600;letter-spacing:1px}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0 0}
+.ft-inner{max-width:1200px;margin:0 auto;padding:0 48px}
+.ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--border2)}
+.ft-brand-logo{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.ft-brand-logo img{height:40px;width:auto;filter:drop-shadow(0 0 6px rgba(201,168,76,0.2))}
+.ft-brand-name{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--white);letter-spacing:3px}
+.ft-brand-text{font-size:0.8rem;color:var(--text2);line-height:1.7}
+.ft-col-title{font-family:'Rajdhani',sans-serif;font-size:0.7rem;font-weight:700;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.ft-links{list-style:none}
+.ft-links li{margin-bottom:9px}
+.ft-links a{color:var(--text2);text-decoration:none;font-size:0.82rem;transition:color 0.2s}
+.ft-links a:hover{color:var(--gold)}
+.ft-bottom{padding:20px 0;display:flex;align-items:center;justify-content:space-between;font-size:0.74rem;color:var(--text2);flex-wrap:wrap;gap:10px}
+.ft-bottom a{color:var(--text2);text-decoration:none;transition:color 0.2s}
+.ft-bottom a:hover{color:var(--gold)}
+.ft-legal{display:flex;gap:20px;flex-wrap:wrap}
+
+/* ===== MODAL ===== */
+.modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9000;align-items:center;justify-content:center;padding:20px}
+.modal-ov.open{display:flex}
+.modal-box{
+  background:var(--navy2);border:1px solid var(--border);
+  max-width:740px;width:100%;max-height:88vh;overflow-y:auto;
+  padding:44px;position:relative;
+}
+.modal-close{position:absolute;top:16px;right:16px;background:none;border:1px solid var(--border2);color:var(--text2);width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:all 0.2s}
+.modal-close:hover{border-color:var(--gold);color:var(--gold)}
+.modal-box h2{font-family:'Rajdhani',sans-serif;font-size:1.7rem;font-weight:700;color:var(--white);margin-bottom:6px}
+.modal-tag{font-size:0.68rem;color:var(--text2);letter-spacing:3px;text-transform:uppercase;margin-bottom:22px;font-family:'Rajdhani',sans-serif}
+.modal-box h3{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--gold);margin:18px 0 7px}
+.modal-box p{font-size:0.86rem;color:var(--text2);line-height:1.8;margin-bottom:10px}
+.modal-box ul{padding-left:18px;margin-bottom:10px}
+.modal-box ul li{font-size:0.86rem;color:var(--text2);line-height:1.8;margin-bottom:3px}
+.modal-box a{color:var(--gold);text-decoration:none}
+.modal-box a:hover{text-decoration:underline}
+
+/* ===== ANIMATIONS ===== */
+.fi{opacity:0;transform:translateY(24px);transition:opacity 0.65s ease,transform 0.65s ease}
+.fi.v{opacity:1;transform:translateY(0)}
+.fi.d1{transition-delay:0.1s}.fi.d2{transition-delay:0.2s}
+.fi.d3{transition-delay:0.3s}.fi.d4{transition-delay:0.4s}
+.fi.d5{transition-delay:0.5s}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1100px){
+  nav{padding:0 32px}
+  .si{padding:0 32px}
+  .ft-inner{padding:0 32px}
+  #hero{padding:110px 32px 72px}
+  .nav-links a{padding:8px 10px;font-size:0.73rem}
+  .ov-grid{grid-template-columns:repeat(2,1fr)}
+  .ov-card:nth-child(3n){border-right:1px solid var(--border2)}
+  .ov-card:nth-child(2n){border-right:none}
+  .ki-grid{grid-template-columns:repeat(2,1fr)}
+  .uc-grid{grid-template-columns:repeat(2,1fr)}
+  .comp-layout{grid-template-columns:1fr;gap:44px}
+  .sch-layout{grid-template-columns:1fr;gap:44px}
+  .vg-steps{grid-template-columns:repeat(2,1fr);gap:28px}
+  .vg-steps::before{display:none}
+  .kt-layout{grid-template-columns:1fr;gap:44px}
+  .ft-top{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .ov-grid{grid-template-columns:1fr;border:none;gap:2px}
+  .ov-card{border-right:none!important;border-bottom:1px solid var(--border2)}
+  .ki-grid{grid-template-columns:1fr}
+  .uc-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:24px}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .form-row{grid-template-columns:1fr}
+  .ft-top{grid-template-columns:1fr}
+  #cookie-banner{padding:16px 20px}
+  .modal-box{padding:28px 20px}
+  .cta-btns{flex-direction:column;align-items:center}
+}
+@media(max-width:480px){
+  .uc-grid{grid-template-columns:1fr}
+  .vg-steps{grid-template-columns:1fr}
+  .hero-title{font-size:2.3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="cookie-text">
+    Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung zu bieten. Mit Klick auf „Akzeptieren" stimmen Sie der Verwendung gemäß unserer <a href="#" onclick="openModal('datenschutz');return false">Datenschutzerklärung</a> zu.
+  </div>
+  <div class="cookie-btns">
+    <button class="btn-ck-no" onclick="closeCookie()">Nur notwendige</button>
+    <button class="btn-ck-ok" onclick="acceptCookies()">Akzeptieren</button>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="navbar" role="navigation" aria-label="Hauptnavigation">
+  <a href="#hero" class="nav-logo" aria-label="VITA SYSTEMS – Zur Startseite">
+    <img src="systemlogo1.png" alt="VITA SYSTEMS Logo – IT Lösungen Österreich" loading="eager" width="48" height="48">
+    <div class="nav-logo-text">VITA SYSTEMS<span>IT SOLUTIONS</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#ki">KI & Automatisierung</a></li>
+    <li><a href="#compliance">Compliance</a></li>
+    <li><a href="#schulungen">Schulungen</a></li>
+    <li><a href="#vorgehen">Vorgehen</a></li>
+    <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="navigation">
+  <a href="#leistungen" onclick="toggleMenu()">Leistungen</a>
+  <a href="#ki" onclick="toggleMenu()">KI & Automatisierung</a>
+  <a href="#compliance" onclick="toggleMenu()">Compliance</a>
+  <a href="#schulungen" onclick="toggleMenu()">Schulungen & Support</a>
+  <a href="#vorgehen" onclick="toggleMenu()">Vorgehen</a>
+  <a href="#kontakt" onclick="toggleMenu()">Kontakt</a>
+</div>
+
+<!-- HERO -->
+<header id="hero" role="banner">
+  <div class="hero-bg"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-content">
+    <div class="hero-badge fi">IT-Partner in Österreich</div>
+    <h1 class="hero-title fi d1">
+      <span class="gold">VITA SYSTEMS</span>
+      <span class="sub">Technologie. Sicherheit. Zukunft.</span>
+    </h1>
+    <p class="hero-sub fi d2">Maßgeschneiderte IT-Lösungen für Unternehmen, die KI, Automatisierung und Cybersecurity als strategische Vorteile nutzen – ohne Kompromisse bei Compliance und Sicherheit.</p>
+    <div class="hero-btns fi d3">
+      <a href="#kontakt" class="btn-p">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Beratungsgespräch
+      </a>
+      <a href="#leistungen" class="btn-s">Leistungen entdecken</a>
+    </div>
+    <div class="hero-stats fi d4">
+      <div><div class="stat-num">100%</div><div class="stat-label">Maßgeschneidert</div></div>
+      <div><div class="stat-num">NIS2</div><div class="stat-label">Compliance-ready</div></div>
+      <div><div class="stat-num">24/7</div><div class="stat-label">Support</div></div>
+      <div><div class="stat-num">AT</div><div class="stat-label">Salzburg</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<!-- 1. LEISTUNGEN OVERVIEW -->
+<section id="leistungen" class="sp" aria-labelledby="leistungen-title">
+  <div class="si">
+    <div class="fi">
+      <div class="section-label">Unsere Leistungen</div>
+      <h2 class="section-title" id="leistungen-title">Was wir für Sie tun</h2>
+      <p class="section-sub">Sechs Kernbereiche – ein Partner. Wir begleiten Sie von der Strategie bis zur Umsetzung.</p>
+    </div>
+    <div class="ov-grid">
+      <div class="ov-card fi d1">
+        <div class="ov-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="ov-title">KI & Automatisierung</div>
+        <p class="ov-text">Chatbots, KI-Lösungen und Prozessautomatisierung – maßgeschneidert für Ihr Unternehmen.</p>
+        <a href="#ki" class="ov-link">Details <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="ov-card fi d2">
+        <div class="ov-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="ov-title">Cybersecurity</div>
+        <p class="ov-text">Penetrationstests, SOC/SIEM, Zero Trust – proaktiver Schutz Ihrer digitalen Infrastruktur.</p>
+        <a href="#compliance" class="ov-link">Details <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="ov-card fi d3">
+        <div class="ov-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="ov-title">Compliance</div>
+        <p class="ov-text">NIS2, ISO 27001, DORA, DSGVO – wir führen Sie sicher durch alle regulatorischen Anforderungen.</p>
+        <a href="#compliance" class="ov-link">Details <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="ov-card fi d2">
+        <div class="ov-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="ov-title">Schulungen & Support</div>
+        <p class="ov-text">Security Awareness, KI-Workshops und technischer Support – Ihr Team ist bestens vorbereitet.</p>
+        <a href="#schulungen" class="ov-link">Details <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="ov-card fi d3">
+        <div class="ov-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="ov-title">IT-Consulting</div>
+        <p class="ov-text">Strategische Begleitung bei Digital Transformation, Cloud-Projekten und IT-Architektur.</p>
+        <a href="#kontakt" class="ov-link">Anfragen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="ov-card fi d4">
+        <div class="ov-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="ov-title">IT-Infrastruktur</div>
+        <p class="ov-text">Cloud, On-Premise oder Hybrid – wir planen, migrieren und betreiben Ihre IT-Infrastruktur.</p>
+        <a href="#kontakt" class="ov-link">Anfragen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 2. KI & AUTOMATISIERUNG DETAIL -->
+<section id="ki" class="sp" aria-labelledby="ki-title">
+  <div class="si">
+    <div class="fi">
+      <div class="section-label">KI & Automatisierung</div>
+      <h2 class="section-title" id="ki-title">Intelligente Lösungen für Ihr Unternehmen</h2>
+      <p class="section-sub">Von KI-Chatbots über maßgeschneiderte KI-Konzepte bis hin zur vollständigen Prozessautomatisierung – wir machen Ihr Unternehmen zukunftsfähig.</p>
+    </div>
+    <div class="ki-grid">
+      <div class="ki-card fi d1">
+        <div class="ki-label">Chatbots & Conversational AI</div>
+        <h3 class="ki-title">KI-Chatbots & digitale Assistenten</h3>
+        <p class="ki-text">Intelligente Chatbots für Kundenservice, internes Wissensmanagement oder Vertriebsprozesse – trainiert auf Ihre eigenen Daten, integriert in Ihre bestehenden Systeme. Von einfachen FAQ-Bots bis zu komplexen Multi-Turn-Dialogen mit GPT-4 oder eigenen Sprachmodellen.</p>
+        <div class="ki-tags">
+          <span class="tag">GPT-4 / Azure OpenAI</span>
+          <span class="tag">RAG-Systeme</span>
+          <span class="tag">Custom LLM</span>
+          <span class="tag">Multilinguale Bots</span>
+          <span class="tag">CRM-Integration</span>
+        </div>
+      </div>
+      <div class="ki-card fi d2">
+        <div class="ki-label">Machine Learning & Analyse</div>
+        <h3 class="ki-title">KI-Lösungen & Konzepte</h3>
+        <p class="ki-text">Maßgeschneiderte KI-Strategien, Proof-of-Concepts und produktionsreife Lösungen: Dokumentenerkennung, Bildanalyse, Predictive Analytics, Anomalieerkennung. Wir begleiten Sie von der Idee bis zum fertigen Produkt – verständlich erklärt, pragmatisch umgesetzt.</p>
+        <div class="ki-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Predictive Analytics</span>
+          <span class="tag">OCR / Dokumenten-KI</span>
+          <span class="tag">Anomalieerkennung</span>
+        </div>
+      </div>
+      <div class="ki-card fi d3">
+        <div class="ki-label">RPA & Workflow</div>
+        <h3 class="ki-title">Prozess-Automatisierung</h3>
+        <p class="ki-text">Repetitive Aufgaben gehören der Vergangenheit an. Wir automatisieren manuelle Prozesse, verknüpfen Systeme nahtlos und schaffen intelligente Workflows – von einfacher Aufgabenautomation bis zu unternehmensweiten Multi-System-Integrationen mit ERP, CRM und Cloud-Plattformen.</p>
+        <div class="ki-tags">
+          <span class="tag">RPA / Robotics</span>
+          <span class="tag">API-Integration</span>
+          <span class="tag">Workflow-Engine</span>
+          <span class="tag">ERP / SAP</span>
+          <span class="tag">Power Automate</span>
+        </div>
+      </div>
+    </div>
+    <div class="usecase-box fi d2">
+      <div class="section-label">Typische Anwendungsfälle</div>
+      <div class="uc-grid">
+        <div class="uc-item">
+          <div class="uc-title">Dokumenten-KI</div>
+          <p class="uc-text">Automatische Extraktion, Klassifizierung und Verarbeitung von Rechnungen, Verträgen und Formularen – ohne manuelle Eingabe.</p>
+        </div>
+        <div class="uc-item">
+          <div class="uc-title">24/7 Support-Chatbot</div>
+          <p class="uc-text">Intelligenter Kundenservice-Bot mit Wissensdatenbank, automatischer Ticket-Anlage und Übergabe an Mitarbeiter bei Bedarf.</p>
+        </div>
+        <div class="uc-item">
+          <div class="uc-title">ERP & CRM Automation</div>
+          <p class="uc-text">Datenübertragung zwischen ERP, CRM und Drittsystemen ohne manuelle Eingaben – fehlerfrei, skalierbar, dokumentiert.</p>
+        </div>
+        <div class="uc-item">
+          <div class="uc-title">Predictive Analytics</div>
+          <p class="uc-text">Frühwarnsysteme, Absatzprognosen und Anomalieerkennung auf Basis Ihrer historischen Unternehmens- und Produktionsdaten.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:32px;text-align:center" class="fi d3">
+      <a href="#kontakt" class="btn-p">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        KI-Projekt besprechen
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 3. COMPLIANCE DETAIL -->
+<section id="compliance" class="sp" aria-labelledby="compliance-title">
+  <div class="si">
+    <div class="fi">
+      <div class="section-label">Compliance & Security</div>
+      <h2 class="section-title" id="compliance-title">Regulatorische Sicherheit ohne Kompromisse</h2>
+      <p class="section-sub">NIS2, ISO 27001, DORA, DSGVO – der Druck wächst. Wir kennen die Frameworks und führen Sie effizient zur vollständigen Konformität.</p>
+    </div>
+    <div class="comp-layout">
+      <div class="comp-text fi d1">
+        <p class="comp-intro">Regulatorische Anforderungen sind komplex, zeitintensiv und ändern sich ständig. Wir nehmen Ihnen diese Last ab – mit praxiserprobten Methoden, klaren Prozessen und erfahrenen Experten.</p>
+        <ul class="comp-list">
+          <li>Gap-Analysen und Risikoassessments nach aktuellen Standards</li>
+          <li>Implementierung von Sicherheitsmaßnahmen und Prozessen</li>
+          <li>Erstellung aller notwendigen Policies und Dokumentation</li>
+          <li>Security Awareness Trainings für alle Mitarbeiterebenen</li>
+          <li>Begleitung bei Audits und Zertifizierungsverfahren</li>
+          <li>Penetrationstests und Schwachstellenanalysen</li>
+          <li>SIEM-Implementierungen und Security Operations</li>
+          <li>Laufendes Monitoring und Anpassung an neue Anforderungen</li>
+        </ul>
+        <a href="#kontakt" class="btn-p">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Compliance-Check anfragen
+        </a>
+      </div>
+      <div class="comp-frameworks fi d2">
+        <div class="fw-card">
+          <div class="fw-row">
+            <div class="fw-badge">NIS2</div>
+            <div class="fw-info">
+              <div class="fw-name">Network & Information Security Directive 2</div>
+              <p class="fw-desc">EU-Richtlinie für erhöhte Cybersicherheit in 18 Sektoren. Verpflichtende Sicherheitsmaßnahmen, Meldepflichten bei Vorfällen und Management-Verantwortung.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fw-card">
+          <div class="fw-row">
+            <div class="fw-badge">ISO</div>
+            <div class="fw-info">
+              <div class="fw-name">ISO/IEC 27001 – Informationssicherheit</div>
+              <p class="fw-desc">Internationaler Standard für Informationssicherheits-Managementsysteme (ISMS). Weltweit anerkannt – schafft Vertrauen bei Kunden, Partnern und Behörden.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fw-card">
+          <div class="fw-row">
+            <div class="fw-badge">DORA</div>
+            <div class="fw-info">
+              <div class="fw-name">Digital Operational Resilience Act</div>
+              <p class="fw-desc">EU-Verordnung für den Finanzsektor zur Stärkung der digitalen Resilienz gegenüber IKT-Risiken. Betrifft Banken, Versicherungen und Drittanbieter.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fw-card">
+          <div class="fw-row">
+            <div class="fw-badge">DSGVO</div>
+            <div class="fw-info">
+              <div class="fw-name">Datenschutz-Grundverordnung</div>
+              <p class="fw-desc">Europäischer Datenschutzstandard. Technische und organisatorische Maßnahmen, Datenschutz-Folgenabschätzungen und vollständige Dokumentationspflichten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 4. SCHULUNGEN & SUPPORT -->
+<section id="schulungen" class="sp" aria-labelledby="schulungen-title">
+  <div class="si">
+    <div class="fi">
+      <div class="section-label">Schulungen & Support</div>
+      <h2 class="section-title" id="schulungen-title">Wissen schützt – Support trägt</h2>
+      <p class="section-sub">Technologie schützt nur dann, wenn das Team sie versteht. Unsere Trainings sind praxisnah, aktuell und wirkungsvoll – unser Support schnell und kompetent.</p>
+    </div>
+    <div class="sch-layout">
+      <div class="sch-cards fi d1">
+        <div class="sch-card">
+          <div class="sch-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" stroke-width="1.5"/></svg>
+          </div>
+          <div>
+            <div class="sch-title">Security Awareness Training</div>
+            <p class="sch-text">Phishing, Social Engineering, sichere Passwörter, Datenschutz im Alltag – praxisnahe Schulungen für alle Mitarbeitenden, damit Ihre erste Verteidigungslinie hält.</p>
+          </div>
+        </div>
+        <div class="sch-card">
+          <div class="sch-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <div class="sch-title">KI & Automatisierungs-Workshops</div>
+            <p class="sch-text">Befähigen Sie Ihr Team, KI-Tools wie ChatGPT, Copilot und Automatisierungsplattformen effektiv zu nutzen und Potenziale eigenständig zu erkennen.</p>
+          </div>
+        </div>
+        <div class="sch-card">
+          <div class="sch-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <div class="sch-title">Compliance-Schulungen (NIS2 / DSGVO)</div>
+            <p class="sch-text">Meldepflichten, Dokumentation, Datenschutz im Arbeitsalltag – rechtskonforme Schulungen für Führungskräfte, IT-Teams und alle betroffenen Mitarbeitenden.</p>
+          </div>
+        </div>
+        <div class="sch-card">
+          <div class="sch-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div>
+            <div class="sch-title">Technische IT-Schulungen</div>
+            <p class="sch-text">Cloud-Plattformen, Sicherheitstools, Netzwerkgrundlagen – individuelle Schulungsprogramme für IT-Teams und technische Fachkräfte in Ihrem Unternehmen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="support-box fi d2">
+        <div>
+          <div class="section-label" style="margin-bottom:12px">IT-Support</div>
+          <div class="support-title">Schnell, kompetent, zuverlässig</div>
+          <p class="support-sub">Technische Probleme lösen wir, bevor sie zu echten Ausfällen werden. Von der ersten Anfrage bis zur vollständigen Lösung.</p>
+        </div>
+        <div class="support-item">
+          <div class="support-item-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="support-item-title">Remote-Support & Helpdesk</div>
+            <p class="support-item-text">Schnelle Hilfe per Telefon, E-Mail oder Fernzugriff. First- bis Third-Level-Support aus einer Hand.</p>
+          </div>
+        </div>
+        <div class="support-item">
+          <div class="support-item-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <div class="support-item-title">Vor-Ort-Einsätze</div>
+            <p class="support-item-text">Bei Bedarf kommen wir zu Ihnen – Salzburg und ganz Österreich. Installation, Wartung, Troubleshooting.</p>
+          </div>
+        </div>
+        <div class="support-item">
+          <div class="support-item-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="support-item-title">24/7 Monitoring & Notfall</div>
+            <p class="support-item-text">Proaktives System-Monitoring und Notfall-Support – damit kritische Systeme rund um die Uhr laufen.</p>
+          </div>
+        </div>
+        <a href="#kontakt" class="btn-p" style="margin-top:8px;width:100%;justify-content:center">Support anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 5. VORGEHEN -->
+<section id="vorgehen" class="sp" aria-labelledby="vorgehen-title">
+  <div class="si">
+    <div class="fi" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Unsere Methodik</div>
+      <h2 class="section-title" id="vorgehen-title">Strukturiert. Transparent. Wirksam.</h2>
+      <p class="section-sub" style="margin:0 auto">Jedes Projekt folgt unserem bewährten 4-Phasen-Modell – von der ersten Analyse bis zum laufenden Betrieb.</p>
+    </div>
+    <div class="vg-steps">
+      <div class="vg-card fi d1">
+        <div class="vg-num">01</div>
+        <div class="vg-title">Analyse & Assessment</div>
+        <p class="vg-text">Wir verstehen Ihre Situation vollständig: Schwachstellen, Potenziale, Ziele. Ehrlich und ohne Vorannahmen.</p>
+      </div>
+      <div class="vg-card fi d2">
+        <div class="vg-num">02</div>
+        <div class="vg-title">Konzept & Planung</div>
+        <p class="vg-text">Maßgeschneidertes Lösungsdesign mit klarem Projektplan, Milestones, Ressourcen und messbaren KPIs.</p>
+      </div>
+      <div class="vg-card fi d3">
+        <div class="vg-num">03</div>
+        <div class="vg-title">Implementierung</div>
+        <p class="vg-text">Agile Umsetzung mit kontinuierlichem Reporting. Keine Überraschungen – volle Transparenz in jeder Phase.</p>
+      </div>
+      <div class="vg-card fi d4">
+        <div class="vg-num">04</div>
+        <div class="vg-title">Betrieb & Optimierung</div>
+        <p class="vg-text">Übergabe, Schulung und laufende Betreuung. Ihre Lösung wird kontinuierlich überwacht und verbessert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div id="cta">
+  <div class="si">
+    <div class="cta-inner">
+      <h2 class="cta-title fi">Bereit für den nächsten Schritt?</h2>
+      <p class="cta-sub fi d1">Vereinbaren Sie ein unverbindliches Erstgespräch. Wir analysieren Ihre Situation und zeigen konkrete Potenziale auf.</p>
+      <div class="cta-btns fi d2">
+        <a href="#kontakt" class="btn-p">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Jetzt kontaktieren
+        </a>
+        <a href="tel:+436701848382" class="btn-s">+43 670 1 84 83 82</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="sp" aria-labelledby="kontakt-title">
+  <div class="si">
+    <div class="fi">
+      <div class="section-label">Direkter Draht</div>
+      <h2 class="section-title" id="kontakt-title">Sprechen wir über Ihr Projekt</h2>
+      <p class="section-sub">Kein Standardangebot – wir nehmen uns Zeit für Ihre individuelle Situation.</p>
+    </div>
+    <div class="kt-layout">
+      <div class="kt-info fi d1">
+        <h3>Kontaktdaten</h3>
+        <div class="kt-detail">
+          <div class="kt-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="kt-dlabel">Adresse</div><div class="kt-dval">Auerbach 9, 5301 Eugendorf<br>Österreich</div></div>
+        </div>
+        <div class="kt-detail">
+          <div class="kt-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="kt-dlabel">Telefon</div><div class="kt-dval"><a href="tel:+436701848382">+43 670 1 84 83 82</a></div></div>
+        </div>
+        <div class="kt-detail">
+          <div class="kt-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="kt-dlabel">E-Mail</div><div class="kt-dval"><a href="mailto:d-m@vitaenergy.at">d-m@vitaenergy.at</a></div></div>
+        </div>
+        <div class="kt-detail">
+          <div class="kt-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><div class="kt-dlabel">Geschäftszeiten</div><div class="kt-dval">Mo–Fr: 08:00–18:00 Uhr<br>Support: 24/7</div></div>
+        </div>
+        <div class="kt-detail">
+          <div class="kt-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div><div class="kt-dlabel">Geschäftsführer</div><div class="kt-dval">Zoran Djurasinovic</div></div>
+        </div>
+      </div>
+      <div class="kt-form fi d2">
+        <div id="formSuccess" class="form-success">✓ Nachricht erhalten – wir melden uns innerhalb von 24 Stunden.</div>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="fname">Vorname *</label><input type="text" id="fname" placeholder="Max" required></div>
+            <div class="form-group"><label for="lname">Nachname *</label><input type="text" id="lname" placeholder="Mustermann" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="email">E-Mail *</label><input type="email" id="email" placeholder="max@firma.at" required></div>
+            <div class="form-group"><label for="phone">Telefon</label><input type="tel" id="phone" placeholder="+43 ..."></div>
+          </div>
+          <div class="form-group"><label for="company">Unternehmen</label><input type="text" id="company" placeholder="Ihre Firma GmbH"></div>
+          <div class="form-group">
+            <label for="service">Themenbereich</label>
+            <select id="service">
+              <option value="">Bitte wählen...</option>
+              <option>KI & Automatisierung / Chatbots</option>
+              <option>Cybersecurity</option>
+              <option>NIS2 / ISO / DORA Compliance</option>
+              <option>IT-Schulungen & Support</option>
+              <option>IT-Consulting & Infrastruktur</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Ihre Nachricht *</label><textarea id="message" placeholder="Beschreiben Sie Ihr Anliegen oder Projekt..." required></textarea></div>
+          <div class="form-check">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">Ich habe die <a href="#" onclick="openModal('datenschutz');return false">Datenschutzerklärung</a> gelesen und stimme der Datenverarbeitung zur Kontaktaufnahme zu. *</label>
+          </div>
+          <button type="submit" class="btn-submit">Anfrage absenden →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div>
+        <div class="ft-brand-logo">
+          <img src="systemlogo1.png" alt="VITA SYSTEMS Logo" width="40" height="40">
+          <div class="ft-brand-name">VITA SYSTEMS</div>
+        </div>
+        <p class="ft-brand-text">Maßgeschneiderte IT-Lösungen.</p>
+      </div>
+      <div>
+        <div class="ft-col-title">Leistungen</div>
+        <ul class="ft-links">
+          <li><a href="#ki">KI & Automatisierung</a></li>
+          <li><a href="#ki">KI-Chatbots</a></li>
+          <li><a href="#compliance">Cybersecurity</a></li>
+          <li><a href="#compliance">NIS2 / DORA / ISO</a></li>
+          <li><a href="#schulungen">Schulungen & Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-title">Unternehmen</div>
+        <ul class="ft-links">
+          <li><a href="#vorgehen">Vorgehen</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#" onclick="openModal('impressum');return false">Impressum</a></li>
+          <li><a href="#" onclick="openModal('datenschutz');return false">Datenschutz</a></li>
+          <li><a href="#" onclick="openModal('agb');return false">AGB</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-title">Kontakt</div>
+        <ul class="ft-links">
+          <li><a href="tel:+436701848382">+43 670 1 84 83 82</a></li>
+          <li><a href="mailto:d-m@vitaenergy.at">d-m@vitaenergy.at</a></li>
+          <li style="color:var(--text2);font-size:0.82rem;cursor:default">Auerbach 9</li>
+          <li style="color:var(--text2);font-size:0.82rem;cursor:default">5301 Eugendorf, AT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2025 VITA SYSTEMS | Vita Energy GmbH | FN 409166 s | HG Salzburg | ATU68473902</span>
+      <div class="ft-legal">
+        <a href="#" onclick="openModal('impressum');return false">Impressum</a>
+        <a href="#" onclick="openModal('datenschutz');return false">Datenschutz</a>
+        <a href="#" onclick="openModal('agb');return false">AGB</a>
+        <a href="#" onclick="openModal('cookies');return false">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-ov" id="modal-impressum"><div class="modal-box">
+  <button class="modal-close" onclick="closeModal('impressum')">✕</button>
+  <div class="modal-tag">Rechtliche Angaben</div>
+  <h2>Impressum</h2>
+  <h3>Angaben gemäß § 5 ECG & § 14 UGB</h3>
+  <p><strong style="color:var(--white)">VITA SYSTEMS</strong> – eine Marke der Vita Energy GmbH<br>Auerbach 9, 5301 Eugendorf, Österreich</p>
+  <h3>Kontakt</h3>
+  <p>Tel: <a href="tel:+436701848382">+43 670 1 84 83 82</a><br>E-Mail: <a href="mailto:d-m@vitaenergy.at">d-m@vitaenergy.at</a></p>
+  <h3>Firmenbuch & Steuer</h3>
+  <p>Firmenbuchnummer: FN 409166 s<br>Firmenbuchgericht: Handelsgericht Salzburg<br>UID-Nummer: ATU68473902</p>
+  <h3>Geschäftsführung</h3><p>Zoran Djurasinovic</p>
+  <h3>Unternehmensgegenstand</h3><p>IT-Dienstleistungen: KI, Automatisierung, Cybersecurity, Compliance, IT-Schulungen und IT-Consulting.</p>
+  <h3>Aufsichtsbehörde</h3><p>Bezirkshauptmannschaft Salzburg-Umgebung</p>
+  <h3>Anwendbare Rechtsvorschriften</h3><p>Gewerbeordnung: <a href="https://www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a></p>
+  <h3>Haftungsausschluss</h3><p>Die Inhalte wurden sorgfältig erstellt. Für Richtigkeit, Vollständigkeit und Aktualität übernehmen wir keine Gewähr. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 ECG für eigene Inhalte nach allgemeinen Gesetzen verantwortlich.</p>
+  <h3>Urheberrecht</h3><p>Alle Inhalte unterliegen dem österreichischen Urheberrecht. Vervielfältigung oder Verwendung ohne schriftliche Genehmigung ist untersagt.</p>
+  <h3>Online-Streitbeilegung (EU)</h3><p><a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></p>
+</div></div>
+
+<div class="modal-ov" id="modal-datenschutz"><div class="modal-box">
+  <button class="modal-close" onclick="closeModal('datenschutz')">✕</button>
+  <div class="modal-tag">DSGVO-konform</div>
+  <h2>Datenschutzerklärung</h2>
+  <p>Stand: 2025 | Vita Energy GmbH (VITA SYSTEMS), Auerbach 9, 5301 Eugendorf</p>
+  <h3>1. Verantwortlicher</h3>
+  <p>Vita Energy GmbH (VITA SYSTEMS), Auerbach 9, 5301 Eugendorf<br>E-Mail: d-m@vitaenergy.at | Tel: +43 670 1 84 83 82</p>
+  <h3>2. Server-Logfiles</h3>
+  <p>Bei Websitebesuch werden automatisch Logfiles gespeichert: IP-Adresse, Datum/Uhrzeit, abgerufene Datei, Browserdaten. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
+  <h3>3. Kontaktformular & E-Mail</h3>
+  <p>Übermittelte Daten (Name, E-Mail, Nachricht) werden zur Bearbeitung Ihrer Anfrage verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b / lit. f DSGVO. Löschung nach Erledigung, sofern keine gesetzliche Aufbewahrungspflicht besteht.</p>
+  <h3>4. Cookies</h3>
+  <p>Technisch notwendige Cookies: Art. 6 Abs. 1 lit. f DSGVO. Analyse-Cookies nur nach ausdrücklicher Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Widerruf jederzeit möglich.</p>
+  <h3>5. Ihre Rechte (Art. 15–21 DSGVO)</h3>
+  <ul><li>Auskunft, Berichtigung, Löschung</li><li>Einschränkung der Verarbeitung</li><li>Datenübertragbarkeit</li><li>Widerspruch</li></ul>
+  <p>Kontakt: d-m@vitaenergy.at</p>
+  <h3>6. Beschwerderecht</h3>
+  <p>Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Wien | dsb@dsb.gv.at</p>
+  <h3>7. Datensicherheit</h3>
+  <p>Wir setzen technische und organisatorische Sicherheitsmaßnahmen zum Schutz Ihrer personenbezogenen Daten ein.</p>
+</div></div>
+
+<div class="modal-ov" id="modal-agb"><div class="modal-box">
+  <button class="modal-close" onclick="closeModal('agb')">✕</button>
+  <div class="modal-tag">Allgemeine Geschäftsbedingungen</div>
+  <h2>AGB</h2>
+  <p>Stand: 2025 | Vita Energy GmbH (VITA SYSTEMS)</p>
+  <h3>§ 1 Geltungsbereich</h3><p>Diese AGB gelten für alle Geschäftsbeziehungen zwischen der Vita Energy GmbH (VITA SYSTEMS) und ihren Kunden.</p>
+  <h3>§ 2 Vertragsschluss</h3><p>Angebote sind unverbindlich. Verträge entstehen durch schriftliche Auftragsbestätigung oder Leistungsbeginn.</p>
+  <h3>§ 3 Leistungsumfang</h3><p>Der Leistungsumfang ergibt sich aus der jeweiligen Auftragsbestätigung. Änderungen bedürfen der schriftlichen Vereinbarung.</p>
+  <h3>§ 4 Preise & Zahlung</h3><p>Preise in Euro zzgl. gesetzlicher MwSt. Zahlungsziel: 14 Tage netto ab Rechnungsdatum.</p>
+  <h3>§ 5 Mitwirkungspflichten</h3><p>Der Auftraggeber stellt alle erforderlichen Informationen, Zugänge und Ressourcen rechtzeitig zur Verfügung.</p>
+  <h3>§ 6 Vertraulichkeit</h3><p>Beide Parteien verpflichten sich zur Vertraulichkeit aller im Rahmen der Zusammenarbeit erlangten Informationen.</p>
+  <h3>§ 7 Haftung</h3><p>Unbeschränkte Haftung bei Verletzung von Leben, Körper oder Gesundheit. Im Übrigen beschränkt auf Vorsatz und grobe Fahrlässigkeit. Mittelbare Schäden und entgangener Gewinn sind, soweit gesetzlich zulässig, ausgeschlossen.</p>
+  <h3>§ 8 Geistiges Eigentum</h3><p>Erstellte Werke verbleiben bis zur vollständigen Zahlung im Eigentum des Auftragnehmers.</p>
+  <h3>§ 9 Recht & Gerichtsstand</h3><p>Österreichisches Recht. Gerichtsstand: Salzburg, Österreich.</p>
+</div></div>
+
+<div class="modal-ov" id="modal-cookies"><div class="modal-box">
+  <button class="modal-close" onclick="closeModal('cookies')">✕</button>
+  <div class="modal-tag">Datenschutz</div>
+  <h2>Cookie-Einstellungen</h2>
+  <h3>Notwendige Cookies</h3>
+  <p>Für den Betrieb der Website erforderlich. Können nicht deaktiviert werden. Keine persönlich identifizierbaren Informationen.</p>
+  <h3>Analyse-Cookies</h3>
+  <p>Helfen uns, die Websitenutzung zu verstehen. Alle Daten werden anonymisiert. Sie können diese ablehnen.</p>
+  <div style="display:flex;gap:12px;margin:20px 0;flex-wrap:wrap">
+    <button class="btn-ck-ok" onclick="acceptCookies();closeModal('cookies')">Alle akzeptieren</button>
+    <button class="btn-ck-no" onclick="closeCookie();closeModal('cookies')">Nur notwendige</button>
+  </div>
+  <p style="font-size:0.78rem;color:var(--text2)">Mehr Infos: <a href="#" onclick="closeModal('cookies');openModal('datenschutz')">Datenschutzerklärung</a></p>
+</div></div>
+
+<script>
+// Nav scroll
+window.addEventListener('scroll',function(){
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+});
+// Mobile menu
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+document.addEventListener('click',function(e){
+  var m=document.getElementById('mobileMenu'),h=document.getElementById('hamburger');
+  if(!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open');
+});
+// Cookies
+function acceptCookies(){document.getElementById('cookie-banner').classList.add('hidden');localStorage.setItem('vs_cookie','all')}
+function closeCookie(){document.getElementById('cookie-banner').classList.add('hidden');localStorage.setItem('vs_cookie','min')}
+if(localStorage.getItem('vs_cookie'))document.getElementById('cookie-banner').classList.add('hidden');
+// Modals
+function openModal(id){document.getElementById('modal-'+id).classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.style.overflow=''}
+document.querySelectorAll('.modal-ov').forEach(function(o){
+  o.addEventListener('click',function(e){if(e.target===o){o.classList.remove('open');document.body.style.overflow=''}});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){document.querySelectorAll('.modal-ov.open').forEach(function(m){m.classList.remove('open')});document.body.style.overflow=''}
+});
+// Animations
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v')});
+},{threshold:0.08});
+document.querySelectorAll('.fi').forEach(function(el){obs.observe(el)});
+// Contact form
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=document.getElementById('fname').value.trim()&&
+         document.getElementById('email').value.trim()&&
+         document.getElementById('message').value.trim()&&
+         document.getElementById('privacy').checked;
+  if(!ok){alert('Bitte alle Pflichtfelder ausfüllen und Datenschutz bestätigen.');return}
+  this.style.display='none';
+  document.getElementById('formSuccess').style.display='block';
+});
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-74,behavior:'smooth'})}
+  });
+});
+</script>
+</body>
+</html>
