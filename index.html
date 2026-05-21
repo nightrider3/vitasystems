@@ -181,13 +181,14 @@ section{position:relative;z-index:1}
   font-size:clamp(1.8rem,3.5vw,2.8rem);
   font-weight:700;color:var(--white);line-height:1.1;margin-bottom:14px;
 }
-.section-sub{font-size:0.95rem;color:var(--text2);max-width:580px;line-height:1.8}
+.section-sub{font-size:1rem;color:var(--text2);max-width:600px;line-height:1.8}
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
 
 /* ===== HERO ===== */
 #hero{
   min-height:100vh;display:flex;align-items:center;
   padding:130px 48px 90px;position:relative;overflow:hidden;
+  text-align:center;
 }
 .hero-bg{
   position:absolute;inset:0;
@@ -198,17 +199,17 @@ section{position:relative;z-index:1}
   z-index:1;
 }
 .hero-ring{
-  position:absolute;right:5%;top:50%;transform:translateY(-50%);
-  width:520px;height:520px;border-radius:50%;
-  border:1px solid rgba(201,168,76,0.06);
-  background:radial-gradient(circle,rgba(26,58,107,0.14) 0%,transparent 70%);
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:620px;height:620px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.05);
+  background:radial-gradient(circle,rgba(26,58,107,0.1) 0%,transparent 70%);
   z-index:1;
 }
 .hero-ring::before{
   content:'';position:absolute;inset:40px;border-radius:50%;
-  border:1px solid rgba(201,168,76,0.04);
+  border:1px solid rgba(201,168,76,0.03);
 }
-.hero-content{position:relative;z-index:2;max-width:760px}
+.hero-content{position:relative;z-index:2;max-width:860px;margin:0 auto}
 .hero-badge{
   display:inline-flex;align-items:center;gap:10px;
   background:var(--gold-dim2);border:1px solid var(--border);
@@ -228,8 +229,8 @@ section{position:relative;z-index:1}
   display:block;font-size:clamp(1.2rem,2.8vw,2.1rem);
   font-weight:500;color:var(--text2);letter-spacing:2px;margin-top:4px;
 }
-.hero-sub{font-size:1rem;color:var(--text2);max-width:560px;margin-bottom:40px;line-height:1.8}
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-sub{font-size:1.05rem;color:var(--text2);max-width:600px;margin:0 auto 40px;line-height:1.8}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 .btn-p{
   display:inline-flex;align-items:center;gap:10px;
   background:var(--gold);color:var(--navy);
@@ -252,10 +253,57 @@ section{position:relative;z-index:1}
 .btn-s:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
 .hero-stats{
   display:flex;gap:40px;margin-top:56px;
-  padding-top:40px;border-top:1px solid var(--border2);flex-wrap:wrap;
+  padding-top:40px;border-top:1px solid var(--border2);
+  flex-wrap:wrap;justify-content:center;
 }
 .stat-num{font-family:'Rajdhani',sans-serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
 .stat-label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--text2);margin-top:3px}
+
+/* ===== NOTDIENST BANNER ===== */
+#notdienst{
+  background:linear-gradient(135deg,rgba(180,30,30,0.18) 0%,rgba(201,168,76,0.06) 100%);
+  border-top:1px solid rgba(220,50,50,0.3);
+  border-bottom:1px solid rgba(220,50,50,0.3);
+  padding:22px 0;position:relative;z-index:1;
+}
+.nd-inner{
+  max-width:1200px;margin:0 auto;padding:0 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+}
+.nd-left{display:flex;align-items:center;gap:18px}
+.nd-pulse{
+  width:14px;height:14px;border-radius:50%;
+  background:#e03030;flex-shrink:0;
+  animation:ndpulse 1.8s infinite;
+}
+@keyframes ndpulse{
+  0%{box-shadow:0 0 0 0 rgba(220,50,50,0.7)}
+  70%{box-shadow:0 0 0 14px rgba(220,50,50,0)}
+  100%{box-shadow:0 0 0 0 rgba(220,50,50,0)}
+}
+.nd-label{
+  font-family:'Rajdhani',sans-serif;font-size:0.68rem;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;color:#e05050;margin-bottom:2px;
+}
+.nd-text{font-size:0.95rem;color:var(--white);font-weight:400}
+.nd-right{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.btn-nd{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#c0392b;color:#fff;
+  padding:10px 24px;
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.85rem;
+  letter-spacing:2px;text-transform:uppercase;text-decoration:none;
+  transition:all 0.3s;border:1px solid rgba(255,255,255,0.15);
+}
+.btn-nd:hover{background:#e74c3c;transform:translateY(-2px);box-shadow:0 6px 20px rgba(192,57,43,0.4)}
+.nd-phone{color:var(--gold);font-family:'Rajdhani',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:1px;text-decoration:none;transition:color 0.2s}
+.nd-phone:hover{color:var(--gold2)}
+@media(max-width:768px){
+  .nd-inner{flex-direction:column;align-items:flex-start;gap:16px}
+  .nd-right{width:100%}
+  .btn-nd{flex:1;justify-content:center}
+}
 
 /* ===== LEISTUNGEN OVERVIEW ===== */
 #leistungen{background:var(--navy2)}
@@ -285,7 +333,7 @@ section{position:relative;z-index:1}
 }
 .ov-card:hover .ov-icon{border-color:var(--border)}
 .ov-title{font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);letter-spacing:1px;margin-bottom:8px}
-.ov-text{font-size:0.83rem;color:var(--text2);line-height:1.7}
+.ov-text{font-size:0.88rem;color:var(--text2);line-height:1.7}
 .ov-link{
   display:inline-flex;align-items:center;gap:6px;
   margin-top:14px;font-size:0.75rem;letter-spacing:1.5px;
@@ -316,7 +364,7 @@ section{position:relative;z-index:1}
   margin-bottom:12px;
 }
 .ki-title{font-family:'Rajdhani',sans-serif;font-size:1.25rem;font-weight:700;color:var(--white);margin-bottom:10px;line-height:1.2}
-.ki-text{font-size:0.87rem;color:var(--text2);line-height:1.75;margin-bottom:18px}
+.ki-text{font-size:0.91rem;color:var(--text2);line-height:1.75;margin-bottom:18px}
 .ki-tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{
   font-size:0.67rem;letter-spacing:1.5px;text-transform:uppercase;
@@ -331,15 +379,15 @@ section{position:relative;z-index:1}
 .uc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:28px}
 .uc-item{}
 .uc-title{font-family:'Rajdhani',sans-serif;font-size:0.92rem;font-weight:700;color:var(--gold);margin-bottom:7px;letter-spacing:0.5px}
-.uc-text{font-size:0.81rem;color:var(--text2);line-height:1.65}
+.uc-text{font-size:0.85rem;color:var(--text2);line-height:1.65}
 
 /* ===== COMPLIANCE ===== */
 #compliance{background:var(--navy2)}
 .comp-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:52px}
 .comp-text{}
-.comp-intro{font-size:0.92rem;color:var(--text2);line-height:1.8;margin-bottom:28px}
+.comp-intro{font-size:0.96rem;color:var(--text2);line-height:1.8;margin-bottom:28px}
 .comp-list{list-style:none;margin-bottom:32px;display:flex;flex-direction:column;gap:10px}
-.comp-list li{display:flex;align-items:flex-start;gap:12px;font-size:0.88rem;color:var(--text2);line-height:1.6}
+.comp-list li{display:flex;align-items:flex-start;gap:12px;font-size:0.91rem;color:var(--text2);line-height:1.6}
 .comp-list li::before{content:'▸';color:var(--gold);flex-shrink:0;margin-top:1px}
 .comp-frameworks{display:flex;flex-direction:column;gap:16px}
 .fw-card{
@@ -360,7 +408,7 @@ section{position:relative;z-index:1}
 }
 .fw-info{}
 .fw-name{font-family:'Rajdhani',sans-serif;font-size:0.78rem;font-weight:600;color:var(--text2);letter-spacing:1px;margin-bottom:4px}
-.fw-desc{font-size:0.82rem;color:var(--text2);line-height:1.6}
+.fw-desc{font-size:0.85rem;color:var(--text2);line-height:1.6}
 
 /* ===== SCHULUNGEN ===== */
 #schulungen{background:var(--navy)}
@@ -380,17 +428,17 @@ section{position:relative;z-index:1}
   color:var(--gold);
 }
 .sch-title{font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:6px;letter-spacing:0.5px}
-.sch-text{font-size:0.84rem;color:var(--text2);line-height:1.7}
+.sch-text{font-size:0.89rem;color:var(--text2);line-height:1.7}
 .support-box{
   background:var(--navy2);border:1px solid var(--border2);padding:36px;
   display:flex;flex-direction:column;gap:24px;
 }
 .support-title{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:4px}
-.support-sub{font-size:0.88rem;color:var(--text2);line-height:1.7;margin-bottom:16px}
+.support-sub{font-size:0.91rem;color:var(--text2);line-height:1.7;margin-bottom:16px}
 .support-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-top:1px solid var(--border2)}
 .support-item-icon{color:var(--gold);flex-shrink:0;margin-top:2px}
 .support-item-title{font-family:'Rajdhani',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:3px}
-.support-item-text{font-size:0.81rem;color:var(--text2);line-height:1.6}
+.support-item-text{font-size:0.84rem;color:var(--text2);line-height:1.6}
 
 /* ===== VORGEHEN ===== */
 #vorgehen{background:var(--navy2)}
@@ -414,7 +462,7 @@ section{position:relative;z-index:1}
 }
 .vg-card:hover .vg-num{background:var(--gold-dim);border-color:var(--gold);box-shadow:0 0 18px rgba(201,168,76,0.2)}
 .vg-title{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--white);letter-spacing:1px;margin-bottom:10px}
-.vg-text{font-size:0.83rem;color:var(--text2);line-height:1.7}
+.vg-text{font-size:0.86rem;color:var(--text2);line-height:1.7}
 
 /* ===== CTA BAND ===== */
 #cta{
@@ -523,6 +571,7 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   .vg-steps::before{display:none}
   .kt-layout{grid-template-columns:1fr;gap:44px}
   .ft-top{grid-template-columns:1fr 1fr;gap:36px}
+  .nd-inner{padding:0 32px}
 }
 @media(max-width:768px){
   .nav-links{display:none}
@@ -532,12 +581,13 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   .ki-grid{grid-template-columns:1fr}
   .uc-grid{grid-template-columns:1fr 1fr}
   .hero-stats{gap:24px}
-  .hero-btns{flex-direction:column;align-items:flex-start}
+  .hero-btns{flex-direction:column;align-items:center}
   .form-row{grid-template-columns:1fr}
   .ft-top{grid-template-columns:1fr}
   #cookie-banner{padding:16px 20px}
   .modal-box{padding:28px 20px}
   .cta-btns{flex-direction:column;align-items:center}
+  .nd-inner{padding:0 20px}
 }
 @media(max-width:480px){
   .uc-grid{grid-template-columns:1fr}
@@ -613,6 +663,26 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
     </div>
   </div>
 </header>
+
+<!-- NOTDIENST BANNER -->
+<div id="notdienst" role="complementary" aria-label="IT-Notdienst">
+  <div class="nd-inner">
+    <div class="nd-left">
+      <div class="nd-pulse"></div>
+      <div>
+        <div class="nd-label">24/7 IT-Notdienst</div>
+        <div class="nd-text">IT-Notfall? Wir sind rund um die Uhr erreichbar – auch an Wochenenden und Feiertagen.</div>
+      </div>
+    </div>
+    <div class="nd-right">
+      <a href="tel:+436701848382" class="nd-phone">+43 670 1 84 83 82</a>
+      <a href="tel:+436701848382" class="btn-nd">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Jetzt anrufen
+      </a>
+    </div>
+  </div>
+</div>
 
 <div class="divider"></div>
 
@@ -913,6 +983,7 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   </div>
 </section>
 
+
 <div class="divider"></div>
 
 <!-- 5. VORGEHEN -->
@@ -1018,6 +1089,7 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
               <option>NIS2 / ISO / DORA Compliance</option>
               <option>IT-Schulungen & Support</option>
               <option>IT-Consulting & Infrastruktur</option>
+              <option>IT-Notdienst</option>
               <option>Sonstiges</option>
             </select>
           </div>
@@ -1052,6 +1124,7 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
           <li><a href="#compliance">Cybersecurity</a></li>
           <li><a href="#compliance">NIS2 / DORA / ISO</a></li>
           <li><a href="#schulungen">Schulungen & Support</a></li>
+          <li><a href="#notdienst">24/7 Notdienst</a></li>
         </ul>
       </div>
       <div>
@@ -1101,7 +1174,7 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   <h3>Unternehmensgegenstand</h3><p>IT-Dienstleistungen: KI, Automatisierung, Cybersecurity, Compliance, IT-Schulungen und IT-Consulting.</p>
   <h3>Aufsichtsbehörde</h3><p>Bezirkshauptmannschaft Salzburg-Umgebung</p>
   <h3>Anwendbare Rechtsvorschriften</h3><p>Gewerbeordnung: <a href="https://www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a></p>
-  <h3>Haftungsausschluss</h3><p>Die Inhalte wurden sorgfältig erstellt. Für Richtigkeit, Vollständigkeit und Aktualität übernehmen wir keine Gewähr. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 ECG für eigene Inhalte nach allgemeinen Gesetzen verantwortlich.</p>
+  <h3>Haftungsausschluss</h3><p>Die Inhalte wurden sorgfältig erstellt. Für Richtigkeit, Vollständigkeit und Aktualität übernehmen wir keine Gewähr.</p>
   <h3>Urheberrecht</h3><p>Alle Inhalte unterliegen dem österreichischen Urheberrecht. Vervielfältigung oder Verwendung ohne schriftliche Genehmigung ist untersagt.</p>
   <h3>Online-Streitbeilegung (EU)</h3><p><a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></p>
 </div></div>
@@ -1116,16 +1189,14 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   <h3>2. Server-Logfiles</h3>
   <p>Bei Websitebesuch werden automatisch Logfiles gespeichert: IP-Adresse, Datum/Uhrzeit, abgerufene Datei, Browserdaten. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
   <h3>3. Kontaktformular & E-Mail</h3>
-  <p>Übermittelte Daten (Name, E-Mail, Nachricht) werden zur Bearbeitung Ihrer Anfrage verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b / lit. f DSGVO. Löschung nach Erledigung, sofern keine gesetzliche Aufbewahrungspflicht besteht.</p>
+  <p>Übermittelte Daten werden zur Bearbeitung Ihrer Anfrage verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b / lit. f DSGVO.</p>
   <h3>4. Cookies</h3>
-  <p>Technisch notwendige Cookies: Art. 6 Abs. 1 lit. f DSGVO. Analyse-Cookies nur nach ausdrücklicher Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Widerruf jederzeit möglich.</p>
+  <p>Technisch notwendige Cookies: Art. 6 Abs. 1 lit. f DSGVO. Analyse-Cookies nur nach ausdrücklicher Einwilligung.</p>
   <h3>5. Ihre Rechte (Art. 15–21 DSGVO)</h3>
   <ul><li>Auskunft, Berichtigung, Löschung</li><li>Einschränkung der Verarbeitung</li><li>Datenübertragbarkeit</li><li>Widerspruch</li></ul>
   <p>Kontakt: d-m@vitaenergy.at</p>
   <h3>6. Beschwerderecht</h3>
   <p>Österreichische Datenschutzbehörde, Barichgasse 40–42, 1030 Wien | dsb@dsb.gv.at</p>
-  <h3>7. Datensicherheit</h3>
-  <p>Wir setzen technische und organisatorische Sicherheitsmaßnahmen zum Schutz Ihrer personenbezogenen Daten ein.</p>
 </div></div>
 
 <div class="modal-ov" id="modal-agb"><div class="modal-box">
@@ -1135,11 +1206,11 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   <p>Stand: 2025 | Vita Energy GmbH (VITA SYSTEMS)</p>
   <h3>§ 1 Geltungsbereich</h3><p>Diese AGB gelten für alle Geschäftsbeziehungen zwischen der Vita Energy GmbH (VITA SYSTEMS) und ihren Kunden.</p>
   <h3>§ 2 Vertragsschluss</h3><p>Angebote sind unverbindlich. Verträge entstehen durch schriftliche Auftragsbestätigung oder Leistungsbeginn.</p>
-  <h3>§ 3 Leistungsumfang</h3><p>Der Leistungsumfang ergibt sich aus der jeweiligen Auftragsbestätigung. Änderungen bedürfen der schriftlichen Vereinbarung.</p>
+  <h3>§ 3 Leistungsumfang</h3><p>Der Leistungsumfang ergibt sich aus der jeweiligen Auftragsbestätigung.</p>
   <h3>§ 4 Preise & Zahlung</h3><p>Preise in Euro zzgl. gesetzlicher MwSt. Zahlungsziel: 14 Tage netto ab Rechnungsdatum.</p>
   <h3>§ 5 Mitwirkungspflichten</h3><p>Der Auftraggeber stellt alle erforderlichen Informationen, Zugänge und Ressourcen rechtzeitig zur Verfügung.</p>
   <h3>§ 6 Vertraulichkeit</h3><p>Beide Parteien verpflichten sich zur Vertraulichkeit aller im Rahmen der Zusammenarbeit erlangten Informationen.</p>
-  <h3>§ 7 Haftung</h3><p>Unbeschränkte Haftung bei Verletzung von Leben, Körper oder Gesundheit. Im Übrigen beschränkt auf Vorsatz und grobe Fahrlässigkeit. Mittelbare Schäden und entgangener Gewinn sind, soweit gesetzlich zulässig, ausgeschlossen.</p>
+  <h3>§ 7 Haftung</h3><p>Unbeschränkte Haftung bei Verletzung von Leben, Körper oder Gesundheit. Im Übrigen beschränkt auf Vorsatz und grobe Fahrlässigkeit.</p>
   <h3>§ 8 Geistiges Eigentum</h3><p>Erstellte Werke verbleiben bis zur vollständigen Zahlung im Eigentum des Auftragnehmers.</p>
   <h3>§ 9 Recht & Gerichtsstand</h3><p>Österreichisches Recht. Gerichtsstand: Salzburg, Österreich.</p>
 </div></div>
@@ -1149,9 +1220,9 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
   <div class="modal-tag">Datenschutz</div>
   <h2>Cookie-Einstellungen</h2>
   <h3>Notwendige Cookies</h3>
-  <p>Für den Betrieb der Website erforderlich. Können nicht deaktiviert werden. Keine persönlich identifizierbaren Informationen.</p>
+  <p>Für den Betrieb der Website erforderlich. Können nicht deaktiviert werden.</p>
   <h3>Analyse-Cookies</h3>
-  <p>Helfen uns, die Websitenutzung zu verstehen. Alle Daten werden anonymisiert. Sie können diese ablehnen.</p>
+  <p>Helfen uns, die Websitenutzung zu verstehen. Alle Daten werden anonymisiert.</p>
   <div style="display:flex;gap:12px;margin:20px 0;flex-wrap:wrap">
     <button class="btn-ck-ok" onclick="acceptCookies();closeModal('cookies')">Alle akzeptieren</button>
     <button class="btn-ck-no" onclick="closeCookie();closeModal('cookies')">Nur notwendige</button>
@@ -1160,11 +1231,9 @@ footer{background:var(--navy);border-top:1px solid var(--border2);padding:52px 0
 </div></div>
 
 <script>
-// Nav scroll
 window.addEventListener('scroll',function(){
   document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
 });
-// Mobile menu
 function toggleMenu(){
   document.getElementById('mobileMenu').classList.toggle('open');
 }
@@ -1172,11 +1241,9 @@ document.addEventListener('click',function(e){
   var m=document.getElementById('mobileMenu'),h=document.getElementById('hamburger');
   if(!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open');
 });
-// Cookies
 function acceptCookies(){document.getElementById('cookie-banner').classList.add('hidden');localStorage.setItem('vs_cookie','all')}
 function closeCookie(){document.getElementById('cookie-banner').classList.add('hidden');localStorage.setItem('vs_cookie','min')}
 if(localStorage.getItem('vs_cookie'))document.getElementById('cookie-banner').classList.add('hidden');
-// Modals
 function openModal(id){document.getElementById('modal-'+id).classList.add('open');document.body.style.overflow='hidden'}
 function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.style.overflow=''}
 document.querySelectorAll('.modal-ov').forEach(function(o){
@@ -1185,12 +1252,10 @@ document.querySelectorAll('.modal-ov').forEach(function(o){
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){document.querySelectorAll('.modal-ov.open').forEach(function(m){m.classList.remove('open')});document.body.style.overflow=''}
 });
-// Animations
 var obs=new IntersectionObserver(function(entries){
   entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v')});
 },{threshold:0.08});
 document.querySelectorAll('.fi').forEach(function(el){obs.observe(el)});
-// Contact form
 document.getElementById('contactForm').addEventListener('submit',function(e){
   e.preventDefault();
   var ok=document.getElementById('fname').value.trim()&&
@@ -1201,7 +1266,6 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
   this.style.display='none';
   document.getElementById('formSuccess').style.display='block';
 });
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(function(a){
   a.addEventListener('click',function(e){
     var t=document.querySelector(this.getAttribute('href'));
